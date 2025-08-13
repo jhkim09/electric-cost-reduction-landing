@@ -1,0 +1,26 @@
+{
+  "name": "electric-cost-reduction-landing",
+  "version": "1.0.0",
+  "description": "전기요금 절감 진단 신청 랜딩페이지",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "python -m http.server 8000 || python3 -m http.server 8000"
+  },
+  "keywords": [
+    "전기요금절감",
+    "에너지절약",
+    "전력절약",
+    "사업자전기료",
+    "랜딩페이지"
+  ],
+  "author": "ElectriSave",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

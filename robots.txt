@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# 중요 페이지
+Sitemap: https://electrisave.co.kr/sitemap.xml
+
+# SEO 최적화
+Crawl-delay: 1
+
+# 제외할 파일들 (없음 - 랜딩페이지)
