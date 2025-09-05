@@ -232,38 +232,100 @@
         </div>
     </section>
 
-    <!-- ROI Calculator -->
-    <section class="roi-calculator">
+
+    <!-- 기존 ROI Calculator 섹션을 이 코드로 교체하세요 -->
+
+    <!-- Savings Examples -->
+    <section class="savings-examples">
         <div class="container">
-            <h2 class="section-title">💰 절감액 시뮬레이션</h2>
-            <div class="calculator-wrapper">
-                <div class="calculator-input">
-                    <label for="monthly-bill">월 평균 전기요금</label>
-                    <div class="input-group">
-                        <input type="number" id="monthly-bill" placeholder="1200000" />
-                        <span class="currency">원</span>
-                        <button type="button" class="calculate-btn" onclick="calculateSavings()">계산하기</button>
+            <h2 class="section-title">💰 실제 절감 사례</h2>
+            <p class="section-subtitle">업종별 맞춤 솔루션으로 이런 성과를 거두었습니다</p>
+            
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="example-icon">🏭</div>
+                    <h3>제조업 A사</h3>
+                    <div class="example-numbers">
+                        <span class="before">월 350만원</span>
+                        <span class="arrow">→</span>
+                        <span class="after">월 210만원</span>
                     </div>
+                    <div class="savings-badge">40% 절감</div>
+                    <p class="example-method">요금제 변경 + 피크타임 조정</p>
                 </div>
                 
-                <div class="calculator-result" id="calculator-result">
-                    <div class="result-item">
-                        <span class="result-label">예상 절감액 (월)</span>
-                        <span class="result-value" id="monthly-savings">0원</span>
+                <div class="example-item">
+                    <div class="example-icon">🍽️</div>
+                    <h3>식당 B사</h3>
+                    <div class="example-numbers">
+                        <span class="before">월 120만원</span>
+                        <span class="arrow">→</span>
+                        <span class="after">월 90만원</span>
                     </div>
-                    <div class="result-item">
-                        <span class="result-label">예상 절감액 (연)</span>
-                        <span class="result-value" id="yearly-savings">0원</span>
+                    <div class="savings-badge">25% 절감</div>
+                    <p class="example-method">계약전력 최적화 + 효율화</p>
+                </div>
+                
+                <div class="example-item">
+                    <div class="example-icon">🏢</div>
+                    <h3>사무실 C사</h3>
+                    <div class="example-numbers">
+                        <span class="before">월 80만원</span>
+                        <span class="arrow">→</span>
+                        <span class="after">월 64만원</span>
                     </div>
-                    <div class="result-highlight">
-                        <span class="highlight-label">절감예상범위</span>
-                        <span class="highlight-value" id="savings-rate">10% - 40%</span>
+                    <div class="savings-badge">20% 절감</div>
+                    <p class="example-method">스마트 전력관리 시스템</p>
+                </div>
+                
+                <div class="example-item">
+                    <div class="example-icon">📦</div>
+                    <h3>물류창고 D사</h3>
+                    <div class="example-numbers">
+                        <span class="before">월 280만원</span>
+                        <span class="arrow">→</span>
+                        <span class="after">월 168만원</span>
                     </div>
+                    <div class="savings-badge">40% 절감</div>
+                    <p class="example-method">ESS 도입 + 전력판매 수익</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    <!-- Quick CTA Section -->
+    <section class="quick-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">🎯 우리 회사 절감액이 궁금하다면?</h2>
+                <p class="cta-subtitle">
+                    전기요금 고지서만 있으면 <strong>3분 만에</strong> 정확한 절감액을 알려드립니다<br>
+                    <span class="highlight">100% 무료 진단</span> • <span class="highlight">즉시 결과 확인</span>
+                </p>
+                
+                <div class="cta-benefits">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">⚡</span>
+                        <span class="benefit-text">즉시 진단</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">📊</span>
+                        <span class="benefit-text">정확한 분석</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">💰</span>
+                        <span class="benefit-text">맞춤 솔루션</span>
+                    </div>
+                </div>
+                
+                <button class="main-cta-button" onclick="scrollToForm()">
+                    📋 무료 절감 진단 시작하기
+                </button>
+                
+                <p class="cta-note">* 영업 목적의 연락은 하지 않습니다</p>
+            </div>
+        </div>
+    </section>
     <!-- Contact Form -->
     <section class="contact-form" id="contact-form">
         <div class="container">
