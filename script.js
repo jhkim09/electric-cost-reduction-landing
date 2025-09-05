@@ -36,6 +36,23 @@ function calculateSavings() {
             resultSection.style.opacity = '1';
             resultSection.style.transform = 'translateY(0)';
         }, 100);
+        
+        // Google Analytics 이벤트 추적
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'calculator_used', {
+                'event_category': 'engagement',
+                'value': monthlyBill
+            });
+        }
+        
+        // Meta Pixel 이벤트 추적
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'ViewContent', {
+                content_name: 'Savings Calculator',
+                value: monthlySavings,
+                currency: 'KRW'
+            });
+        }
     }
 }
 
@@ -262,6 +279,22 @@ function handleKakaoConnect() {
     
     // 사용자에게 안내 메시지 표시
     alert('카카오톡 채널이 새 창에서 열립니다.\n\n1. https://pp.kepco.co.kr/ 에서 회원가입을 먼저 해주세요\n2. 카카오톡 채널에 다음 정보를 남겨주세요:\n   - 파워플래너 아이디/비밀번호\n   - 담당자 연락처\n   - 회사명\n\n상세히 검토하여 연락드리겠습니다.');
+    
+    // Google Analytics 이벤트 추적
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'kakao_connect', {
+            'event_category': 'engagement',
+            'event_label': 'power_planner'
+        });
+    }
+    
+    // Meta Pixel 이벤트 추적
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Contact', {
+            content_name: 'Kakao Connect',
+            content_category: 'power_planner'
+        });
+    }
 }
 
 // 성공 메시지 표시
@@ -293,6 +326,19 @@ function scrollToForm() {
         behavior: 'smooth',
         block: 'start'
     });
+    
+    // Google Analytics 이벤트 추적
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'scroll_to_form', {
+            'event_category': 'engagement',
+            'event_label': 'cta_button'
+        });
+    }
+    
+    // Meta Pixel 이벤트 추적
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+    }
 }
 
 // 스크롤 이벤트 처리
